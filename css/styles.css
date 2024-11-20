@@ -1,0 +1,435 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+i.fa {
+    margin-right: 5px;
+}
+
+header {
+    background-color: #815d594d;
+}
+
+#about {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .features-img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .features-img {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 768px) {
+[data-aos-delay] {
+    transition-delay: 0 !important;
+}
+}
+#hero img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+#hero {
+width: 100%;
+height: 100vh;
+position: relative;
+background: url('/img/image-background.png') top center;
+background-size: cover;
+position: relative;
+}
+
+#hero:before {
+content: '';
+background: rgba(255, 255, 255, 0.8);
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+
+#hero .container {
+padding-top: 80px;
+}
+
+#hero h1 {
+margin: 0;
+font-size: 56px;
+font-weight: 700;
+line-height: 72px;
+color: #124265;
+font-family: 'Poppins', sans-serif;
+}
+
+#hero h2 {
+color: #5e5e5e;
+margin: 10px 0 0 0;
+font-size: 22px;
+}
+
+#hero .btn-get-started {
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 14px;
+letter-spacing: 0.5px;
+display: inline-block;
+padding: 14px 50px;
+border-radius: 5px;
+transition: 0.5s;
+margin-top: 30px;
+color: #fff;
+background: #2487ce;
+}
+
+#hero .btn-get-started:hover {
+background: #3194db;
+}
+
+#hero .icon-boxes {
+margin-top: 100px;
+}
+
+@media (min-width: 1024px) {
+#hero {
+    background-attachment: fixed;
+}
+}
+
+@media (max-height: 800px) {
+#hero {
+    height: auto;
+}
+}
+
+@media (max-width: 992px) {
+#hero {
+    height: auto;
+}
+
+#hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+#hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+}
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h3 {
+font-weight: 600;
+font-size: 26px;
+}
+
+.about .content ul {
+list-style: none;
+padding: 0;
+}
+
+.about .content ul li {
+padding-bottom: 10px;
+}
+
+.about .content ul i {
+font-size: 20px;
+padding-right: 4px;
+color: #cc1616;
+}
+
+.about .content p:last-child {
+margin-bottom: 0;
+}
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services {
+    padding-bottom: 30px;
+}
+
+.services .icon-box {
+    margin-bottom: 60px;
+}
+
+.services .icon {
+    float: left;
+}
+
+.services .icon i {
+    color: #428bca;
+    font-size: 36px;
+    line-height: 1;
+}
+
+.services .title {
+    margin-left: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.services .title a {
+    color: #343a40;
+    transition: 0.3s;
+}
+
+.services .icon-box:hover .title a {
+    color: #428bca;
+}
+
+.services .description {
+    margin-left: 60px;
+    line-height: 24px;
+    font-size: 14px;
+}
+/*--------------------------------------------------------------
+# Frequenty Asked Questions
+--------------------------------------------------------------*/
+.faq {
+  padding-bottom: 60px;
+}
+
+.faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-family: #fd680e;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+.faq .faq-list i {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: #343a40;
+}
+
+.faq .faq-list a.collapsed:hover {
+  color: #fd680e;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+section#contact {
+    background-color: #fff;
+    padding: 5% 0;
+}
+section#contact .section-heading {
+    color: #000;
+    font-weight: 600;
+    padding: 5% 0;
+}
+section#contact form#contactForm .form-group {
+    margin-bottom: 1.5rem;
+}
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+    padding: 1.25rem;
+}
+section#contact form#contactForm .form-group input.form-control {
+    height: auto;
+}
+section#contact form#contactForm .form-group-textarea {
+    height: 100%;
+}
+section#contact form#contactForm .form-group-textarea textarea {
+    height: 100%;
+    min-height: 10rem;
+}
+section#contact form#contactForm p.help-block {
+    margin: 0;
+}
+section#contact form#contactForm .form-control:focus {
+    border-color: #ffc800;
+    box-shadow: none;
+}
+section#contact form#contactForm ::-webkit-input-placeholder {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    color: #ced4da;
+}
+section#contact form#contactForm :-moz-placeholder {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    color: #ced4da;
+}
+section#contact form#contactForm ::-moz-placeholder {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    color: #ced4da;
+}
+section#contact form#contactForm :-ms-input-placeholder {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    color: #ced4da;
+}
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+color: #444444;
+text-align: center;
+box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+padding: 30px 0 32px 0;
+border-radius: 4px;
+}
+
+.contact .info-box i {
+font-size: 32px;
+color: #e03a3c;
+border-radius: 50%;
+padding: 8px;
+border: 2px dotted #f8d4d5;
+}
+
+.contact .info-box h3 {
+font-size: 20px;
+color: #777777;
+font-weight: 700;
+margin: 10px 0;
+}
+
+.contact .info-box p {
+padding: 0;
+line-height: 24px;
+font-size: 14px;
+margin-bottom: 0;
+}
+
+.contact .php-email-form {
+box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+padding: 30px;
+border-radius: 4px;
+}
+
+.contact .php-email-form .error-message {
+display: none;
+color: #fff;
+background: #ed3c0d;
+text-align: left;
+padding: 15px;
+font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+display: none;
+color: #fff;
+background: #18d26e;
+text-align: center;
+padding: 15px;
+font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+display: none;
+background: #fff;
+text-align: center;
+padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+content: "";
+display: inline-block;
+border-radius: 50%;
+width: 24px;
+height: 24px;
+margin: 0 10px -6px 0;
+border: 3px solid #18d26e;
+border-top-color: #eee;
+animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form .form-group {
+margin-bottom: 25px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+box-shadow: none;
+font-size: 14px;
+border-radius: 4px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+border-color: #111111;
+}
+
+.contact .php-email-form input {
+padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+background: #e03a3c;
+border: 0;
+padding: 10px 32px;
+color: #fff;
+transition: 0.4s;
+border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+background: #e35052;
+}
